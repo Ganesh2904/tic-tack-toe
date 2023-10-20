@@ -23,6 +23,20 @@ let sc2 = document.querySelector("sc2");
 sc1.innerText = 0 ;
 sc2.innerText =0 ;
 
+//themes
+function changeTheme(value){
+    let Neon = document.querySelector("#neon");
+    let Standard = document.querySelector("#standard");
+    if(value == "neon"){
+        Neon.disabled = false;
+        Standard.disabled = true;
+    } else if(value == "standard"){
+        Neon.disabled = true;
+        Standard.disabled = false;
+    }
+}
+
+
 for(let i = 0; i <boxes.length;i++) {
     boxes[i].addEventListener("click", function(){
         if(plength>=document.querySelector('p').innerText.length){

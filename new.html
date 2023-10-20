@@ -5,9 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>tic tac toe</title>
-    <!-- <link rel="stylesheet" href="new.css"> -->
-    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide"> -->
-    <link rel="stylesheet" href="neon.css">
+    <link rel="stylesheet" href="new.css" id="standard">
+    <link rel="stylesheet" href="neon.css" id="neon">
 </head>
 <body>
     <turn> First: players' turn </turn>
@@ -37,6 +36,12 @@
     </div>
     <p>Winner is: </p>
     <button>New game</button>
+    <div id="theme">
+        <select id="select" onclick="changeTheme(this.value)">
+            <option value="neon">Neon</option>
+            <option value="standard">Standard</option>
+        </select>
+    </div>
 </body>
 </html>
 <script src="new.js"></script>
